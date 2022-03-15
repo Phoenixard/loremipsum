@@ -1,0 +1,46 @@
+.form {
+	&__row {
+		display: flex;
+		margin-top: 30px;
+		margin-left: -15px;
+		margin-right: -15px;
+		@media #{$tablet} {
+			flex-direction: column;
+		}
+		&:first-child {
+			margin-top: 0;
+		}
+	}
+	&__field {
+		width: calc(100% / 3);
+		padding: 0 15px;
+		box-sizing: border-box;
+		@media #{$tablet} {
+			width: 100%;
+			margin-top: 30px;
+			&:first-child {
+				margin-top: 0;
+			}
+		}
+	}
+	&__field_medium {
+		width: calc((100% / 3) * 2);
+		@media #{$tablet} {
+			width: 100%;
+		}
+	}
+	&__field_large {
+		width: 100%;
+	}
+	&__btn {
+		display: flex;
+		justify-content: center;
+		margin-top: 50px;
+		@media #{$tablet} {
+			margin-top: 30px;
+		}
+		@media #{$phone} {
+			margin-top: 10px;
+		}
+	}
+}

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Loremipsum</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="https://atuin.ru/demo/ui-slider/jquery-ui.css">
+  </head>
+  <div class="page">
+    <header class="header">
+      <div class="header__mobile-menu js__mobile-btn">
+        <div class="header__mobile-wrapper">
+          <div class="header__mobile-row"></div>
+          <div class="header__mobile-row"></div>
+          <div class="header__mobile-row"></div>
+        </div>
+      </div>
+      <div class="header__wrapper js__mobile-menu">
+        <div class="container">
+          <div class="header__inner">
+            <div class="header__close js__mobile-close"></div><a class="header__logo" href="">LOREMIPSUM.<span>NET</span></a>
+            <div class="header__menu"><a class="header__menu-item is-active" href="">БИЗНЕС</a><a class="header__menu-item" href="">О НАС</a><a class="header__menu-item" href="">ЦЕНЫ</a><a class="header__menu-item" href="">ОФОРМИТЬ ЗАКАЗ</a></div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <div class="cover" style="background-image: url(./img/cover-bg.jpg)">
+        <div class="container">
+          <div class="cover__wrapper">
+            <div class="cover__title"><span>LOREM IPSUM</span> DOLOR SIT AMET CONSECTETUR <span>ADIPISCING</span></div>
+            <div class="cover__content">
+              <p><b>At vero eos et accusamus et iusto odio dignissimos ducimus!</b></p>
+              <ul> 
+                <li>- Totam rem aperiam eaque ipsa</li>
+                <li>- Sit voluptatem accusantium doloremque laudantium </li>
+                <li>- Sed ut perspiciatis, unde omnis iste natus error </li>
+              </ul>
+            </div>
+            <div class="cover__btns">
+              <div class="cover__btn"><a class="btn" href="">ЗАКАЗАТЬ</a></div>
+              <div class="cover__btn"><a class="btn btn_white" href="">ПОДРОБНЕЕ</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section section_order">
+        <div class="container">
+          <div class="title">ОФОРМЛЕНИЕ <span>ЗАКАЗА</span></div>
+          <div class="subtitle">Перед заполнением формы ознакомьтесь с нашей схемой работы!</div>
+          <div class="steps">
+            <div class="steps__wrapper">
+              <div class="steps__item">
+                <div class="steps__item-circle">
+                  <div class="steps__item-icon" style="background-image: url('./img/icon-loop.svg')"></div>
+                </div>
+                <div class="steps__item-text">Lorem ipsum dolor sit amet</div>
+              </div>
+              <div class="steps__item">
+                <div class="steps__item-circle">
+                  <div class="steps__item-icon" style="background-image: url('./img/icon-percent.svg')"></div>
+                </div>
+                <div class="steps__item-text">Сonsecteturadipiscing elit</div>
+              </div>
+              <div class="steps__item">
+                <div class="steps__item-circle">
+                  <div class="steps__item-icon" style="background-image: url('./img/icon-add-document.svg')"></div>
+                </div>
+                <div class="steps__item-text">Sed do eiusmod tempor</div>
+              </div>
+              <div class="steps__item">
+                <div class="steps__item-circle">
+                  <div class="steps__item-icon" style="background-image: url('./img/icon-mail-white.svg')"></div>
+                </div>
+                <div class="steps__item-text">Esse cillum doloreeu fugiat</div>
+              </div>
+              <div class="steps__item">
+                <div class="steps__item-circle">
+                  <div class="steps__item-icon" style="background-image: url('./img/icon-money.svg')"></div>
+                </div>
+                <div class="steps__item-text">Excepteur sint occaecat cupidatat non proident</div>
+              </div>
+            </div>
+          </div>
+          <form class="form" action="" method="">
+            <div class="container">
+              <div class="form__wrapper">
+                <div class="form__row">
+                  <div class="form__field">
+                    <div class="select" data-select><span>Выберите тип системы</span><span>Sed ut perspiciatis</span><span>Nemo enim ipsam</span><span>Et harum quidem</span><span>Temporibus autem</span><span>Itaque earum rerum</span></div>
+                  </div>
+                  <div class="form__field">
+                    <div class="input">
+                      <input class="input__field" type="email" name="email" placeholder="Ваш e-mail">
+                    </div>
+                  </div>
+                  <div class="form__field">
+                    <div class="input">
+                      <input class="input__field" type="text" name="name" placeholder="Вашe имя">
+                    </div>
+                  </div>
+                </div>
+                <div class="form__row">
+                  <div class="form__field form__field_medium">
+                    <div class="range-slider">
+                      <div class="range-slider__description">
+                        <div class="range-slider__title">Sed ut perspiciatis, unde omnis iste natus</div>
+                        <div class="range-slider__value"><span data-slider-value></span><span>%</span></div>
+                      </div>
+                      <div class="range-slider__slider">
+                        <div data-slider></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form__field">
+                    <div class="input input_attach">
+                      <input class="input__attach" type="file" name="file" id="input__attach">
+                      <label class="btn btn_attach" for="input__attach">Прикрепить файл</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="form__btn">
+                  <button class="btn btn_form" type="submit">Отправить</button>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__wrapper">
+          <div class="footer__col footer__col_copyright">
+            <div class="footer__copyright">© 2018 «LOREMIPSUM.NET» Все права защищены.</div>
+          </div>
+          <div class="footer__col footer__col_wide footer__col_payment">
+            <div class="footer__payment">
+              <div class="footer__item footer__item_qiwi">QIWI wallet</div>
+              <div class="footer__item footer__item_yandexmoney">Yandex Money</div>
+              <div class="footer__item footer__item_webmoney">Web Money</div>
+            </div>
+          </div>
+          <div class="footer__col footer__col_contacts">
+            <div class="footer__contacts"><a class="footer__item footer__item_mail" href="mailto:info@ipsum228.com">info@ipsum228.com</a><a class="footer__item footer__item_vk" href="">Мы вконтакте</a></div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.nicescroll/3.7.6/jquery.nicescroll.min.js" integrity="sha512-zMfrMAZYAlNClPKjN+JMuslK/B6sPM09BGvrWlW+cymmPmsUT1xJF3P4kxI3lOh9zypakSgWaTpY6vDJY/3Dig==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js" integrity="sha512-0bEtK0USNd96MnO4XhH8jhv3nyRF0eK87pJke6pkYf3cM0uDIhNJy9ltuzqgypoIFXw3JSuiy04tVk4AjpZdZw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="./scripts/main.min.js"></script>
+</html>

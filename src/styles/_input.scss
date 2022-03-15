@@ -1,0 +1,33 @@
+.input {
+	&__field {
+		width: 100%;
+		padding: 10px 12px;
+		box-sizing: border-box;
+		background: rgba(255, 255, 255, 0.85);
+		border: 1px solid #FFFFFF;
+		border-radius: 3px;
+		font-size: 18px;
+		line-height: 26px;
+		outline: none;
+		transition: $transition;
+		&:focus {
+			border: 1px solid $blue;
+		}
+		@include placeholder {
+			color: #272733;
+			opacity: 1;
+		}
+	}
+	&__attach {
+		opacity: 0;
+		visibility: hidden;
+		position: absolute;
+	}
+}
+.input_attach {
+	@media #{$tablet} {
+		width: 100%;
+		max-width: 375px;
+		margin: 0 auto;
+	}
+}

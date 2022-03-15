@@ -1,0 +1,136 @@
+doctype html
+html(lang="en")
+	head
+		meta(charset="UTF-8")
+		meta(http-equiv="X-UA-Compatible", content="IE=edge")
+		meta(meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0")
+		title Loremipsum
+		link(rel="stylesheet" href="./css/main.css")
+		link(rel="stylesheet" href="https://atuin.ru/demo/ui-slider/jquery-ui.css")
+		
+	.page
+		header.header
+			.header__mobile-menu.js__mobile-btn
+				.header__mobile-wrapper
+					.header__mobile-row
+					.header__mobile-row
+					.header__mobile-row
+			.header__wrapper.js__mobile-menu
+				.container
+					.header__inner
+						.header__close.js__mobile-close
+						a(href="").header__logo LOREMIPSUM.<span>NET</span>
+						.header__menu
+							a(href="").header__menu-item.is-active БИЗНЕС
+							a(href="").header__menu-item О НАС
+							a(href="").header__menu-item ЦЕНЫ
+							a(href="").header__menu-item ОФОРМИТЬ ЗАКАЗ
+
+		main.main
+			.cover(style="background-image: url(./img/cover-bg.jpg)")
+				.container
+					.cover__wrapper
+						.cover__title <span>LOREM IPSUM</span> DOLOR SIT AMET CONSECTETUR <span>ADIPISCING</span>
+						.cover__content
+							p
+								b At vero eos et accusamus et iusto odio dignissimos ducimus!
+							ul 
+								li - Totam rem aperiam eaque ipsa
+								li - Sit voluptatem accusantium doloremque laudantium 
+								li - Sed ut perspiciatis, unde omnis iste natus error 
+						.cover__btns
+							.cover__btn
+								a(href="").btn ЗАКАЗАТЬ
+							.cover__btn
+								a(href="").btn.btn_white ПОДРОБНЕЕ
+
+			.section.section_order
+				.container
+					.title ОФОРМЛЕНИЕ <span>ЗАКАЗА</span>
+					.subtitle Перед заполнением формы ознакомьтесь с нашей схемой работы!
+
+					.steps
+						.steps__wrapper
+							.steps__item
+								.steps__item-circle
+									.steps__item-icon(style="background-image: url('./img/icon-loop.svg')")
+								.steps__item-text Lorem ipsum dolor sit amet
+
+							.steps__item
+								.steps__item-circle
+									.steps__item-icon(style="background-image: url('./img/icon-percent.svg')")
+								.steps__item-text Сonsecteturadipiscing elit
+
+							.steps__item
+								.steps__item-circle
+									.steps__item-icon(style="background-image: url('./img/icon-add-document.svg')")
+								.steps__item-text Sed do eiusmod tempor
+
+							.steps__item
+								.steps__item-circle
+									.steps__item-icon(style="background-image: url('./img/icon-mail-white.svg')")
+								.steps__item-text Esse cillum doloreeu fugiat
+
+							.steps__item
+								.steps__item-circle
+									.steps__item-icon(style="background-image: url('./img/icon-money.svg')")
+								.steps__item-text Excepteur sint occaecat cupidatat non proident
+
+					form.form(action="" method="")
+						.container
+							.form__wrapper
+								.form__row
+									.form__field
+										.select(data-select)
+											span Выберите тип системы
+											span Sed ut perspiciatis
+											span Nemo enim ipsam
+											span Et harum quidem
+											span Temporibus autem
+											span Itaque earum rerum
+
+									.form__field
+										.input
+											input(type="email" name="email" placeholder="Ваш e-mail").input__field
+									.form__field
+										.input
+											input(type="text" name="name" placeholder="Вашe имя").input__field
+								.form__row
+									.form__field.form__field_medium
+										.range-slider
+											.range-slider__description
+												.range-slider__title Sed ut perspiciatis, unde omnis iste natus
+												.range-slider__value
+													span(data-slider-value)
+													span %
+											.range-slider__slider
+												div(data-slider)
+									.form__field
+										.input.input_attach
+											input(type="file" name="file" id="input__attach").input__attach
+											label(for="input__attach").btn.btn_attach Прикрепить файл
+								.form__btn
+									button(type="submit").btn.btn_form Отправить
+
+		footer.footer
+			.container
+				.footer__wrapper
+					.footer__col.footer__col_copyright
+						.footer__copyright © 2018 «LOREMIPSUM.NET» Все права защищены.
+
+					.footer__col.footer__col_wide.footer__col_payment
+						.footer__payment
+							.footer__item.footer__item_qiwi QIWI wallet
+							.footer__item.footer__item_yandexmoney Yandex Money
+							.footer__item.footer__item_webmoney Web Money
+
+					.footer__col.footer__col_contacts
+						.footer__contacts
+							a(href="mailto:info@ipsum228.com").footer__item.footer__item_mail info@ipsum228.com
+							a(href="").footer__item.footer__item_vk Мы вконтакте
+
+	script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer")
+	script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery.nicescroll/3.7.6/jquery.nicescroll.min.js" integrity="sha512-zMfrMAZYAlNClPKjN+JMuslK/B6sPM09BGvrWlW+cymmPmsUT1xJF3P4kxI3lOh9zypakSgWaTpY6vDJY/3Dig==" crossorigin="anonymous" referrerpolicy="no-referrer")
+	script(src="https://code.jquery.com/ui/1.13.1/jquery-ui.js")
+	script(src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js" integrity="sha512-0bEtK0USNd96MnO4XhH8jhv3nyRF0eK87pJke6pkYf3cM0uDIhNJy9ltuzqgypoIFXw3JSuiy04tVk4AjpZdZw==" crossorigin="anonymous" referrerpolicy="no-referrer")
+	script(src="./scripts/main.min.js")

@@ -1,0 +1,91 @@
+.steps {
+	margin-bottom: 80px;
+	@media #{$phone} {
+		margin-bottom: 40px;
+	}
+	&__wrapper {
+		display: flex;
+		justify-content: space-between;
+		@media #{$tablet} {
+			margin: -50px auto 0;
+			width: 100%;
+			max-width: 730px;
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+		@media #{$phone} {
+			margin: 0;
+			max-width: 100%;
+			flex-direction: column;
+			align-items: center;
+		}
+	}
+	&__item {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 0 10px;
+		box-sizing: border-box;
+		width: 100%;
+		max-width: 209px;
+		text-align: center;
+		position: relative;
+		@media #{$tablet} {
+			margin-top: 50px;
+		}
+		@media #{$tablet} {
+			margin-top: 30px;
+		}
+		&:before {
+			content: '';
+			width: 100%;
+			height: 6px;
+			background: url('../img/steps-separator-bg.png') 0 50% repeat-x;
+			background-size: auto 100%;
+			position: absolute;
+			top: 47px;
+			left: calc(50% + 62px);
+				@media #{$laptop} {
+					content: none;
+				}
+		}
+		&:last-child {
+			&:before {
+				content: none;
+			}
+		}
+	}
+	&__item-circle {
+		width: 100px;
+		height: 100px;
+		border-radius: 50%;
+		border: 5px solid #286690;
+		box-sizing: border-box;
+		background: $lightBlue;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		position: relative;
+		@media #{$phone} {
+			width: 80px;
+			height: 80px;
+		}
+	}
+	&__item-icon {
+		width: 55px;
+		height: 55px;
+		background-position: 50% 50%;
+		background-repeat: no-repeat;
+		background-size: cover;
+		@media #{$phone} {
+			width: 35px;
+			height: 35px;
+		}
+	}
+	&__item-text {
+		margin-top: 20px;
+		color: #fff;
+		font-size: 16px;
+		line-height: 19px;
+	}
+}

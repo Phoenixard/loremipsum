@@ -1,0 +1,34 @@
+.range-slider {
+	&__description {
+		display: flex;
+		color: #fff;
+		font-size: 18px;
+		line-height: 22px;
+		margin-bottom: 15px;
+		@media #{$phone} {
+			flex-direction: column;
+		}
+	}
+	&__value {
+		margin-left: auto;
+	}
+	.ui-widget.ui-widget-content {
+		height: 6px;
+		background: rgba(255, 255, 255, 0.7);
+		border: 1px solid #fff;
+		display: block;
+		width: 100%;
+	}
+	.ui-slider .ui-slider-handle {
+		width: 28px;
+		height: 28px;
+		box-sizing: border-box;
+		border-radius: 50%;
+		background: #42A9ED;
+		border: 3px solid #286690;
+		top: 50%;
+		margin-top: -14px;
+		outline: none;
+		cursor: pointer;
+	}
+}

@@ -1,0 +1,83 @@
+.select {
+	width: 100%;
+	box-sizing: border-box;
+	background: rgba(255, 255, 255, 0.85);
+	border: 1px solid #3D4050;
+	border-radius: 3px;
+	font-size: 18px;
+	line-height: 46px;
+	outline: none;
+	transition: $transition;
+	position: relative;
+	&:before {
+		content: '';
+		border: solid black;
+		border-width: 0 2px 2px 0;
+		display: inline-block;
+		padding: 3px;
+		transform: rotate(45deg);
+		position: absolute;
+		right: 20px;
+		top: 50%;
+		margin-top: -4px;
+		transition: $transition;
+	}
+	&:focus {
+		border: 1px solid $blue;
+	}
+	@include placeholder {
+		color: $nearBlack;
+	}
+	&.opened {
+		border-bottom: 1px solid transparent;
+		background: rgba(61, 64, 80, 0.85);
+		.js-suggest-input {
+			color: #fff;
+		}
+		&:before {
+			transform: rotate(-135deg);
+			border: solid #fff;
+			border-width: 0 2px 2px 0;
+		}
+	}
+}
+.js-suggest-input {
+	display: block;
+	padding: 0 12px;
+	width: 100%;
+	line-height: 48px;
+	box-sizing: border-box;
+	transition: $transition;
+	cursor: pointer;
+	color: $nearBlack;
+}
+.js-suggest-input:focus {
+	outline: none;
+}
+.js-suggest-list {
+	position: absolute;
+	display: none;
+	top: 100%;
+	left: -1px;
+	width: 100%;
+	max-height: 180px;
+	overflow: auto;
+	background: rgba(39, 39, 51);
+	border: 1px solid #3D4050;
+	border-top: none;
+	z-index: 10;
+}
+.js-suggest-item {
+	display: block;
+	cursor: pointer;
+	color: #fff;
+	line-height: 34px;
+	user-select: none;
+}
+.js-suggest-item:hover {
+	color: #42A9ED
+}
+.js-suggest-item span {
+	padding: 0 10px;
+	display: block;
+}

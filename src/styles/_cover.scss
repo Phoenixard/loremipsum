@@ -1,0 +1,93 @@
+.cover {
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 750px;
+	margin-top: 100px;
+	@media #{$laptop} {
+		background-position: 75% 50%;
+		min-height: calc(100vh - 100px);
+	}
+	@media #{$tablet} {
+		margin-top: 0;
+		min-height: calc(100vh - 50px);
+	}
+	@media #{$phone} {
+		min-height: calc(100vh - 40px);
+	}
+	&__wrapper {
+		padding: 103px 0 20px;
+		width: 100%;
+		max-width: 780px;
+		@media #{$laptop} {
+			max-width: 680px;
+		}
+		@media #{$phone} {
+			padding: 20px 0;
+			max-width: 100%;
+			display: flex;
+			flex-direction: column;
+			box-sizing: border-box;
+			height: 100%;
+		}
+	}
+	&__title {
+		font-size: 48px;
+		line-height: 58px;
+		font-weight: 700;
+		margin-bottom: 80px;
+		@media #{$phone} {
+			font-size: 32px;
+			line-height: 40px;
+			margin-bottom: 40px;
+			margin-top: auto;
+		}
+	}
+	&__content {
+		margin-bottom: 80px;
+		font-size: 20px;
+		line-height: 24px;
+		@media #{$phone} {
+			font-size: 16px;
+			line-height: 20px;
+			margin-bottom: 30px;
+		}
+	}
+	span {
+		color: $blue;
+	}
+	&__btns {
+		font-size: 0;
+		@media #{$phone} {
+			display: flex;
+			justify-content: space-between;
+		}
+		@media #{$smallPhone} {
+			flex-direction: column;
+		}
+	}
+	&__btn {
+		display: inline-block;
+		margin-right: 30px;
+		@media #{$phone} {
+			width: calc(50% - 5px);
+			margin-right: 0;
+		}
+		@media #{$smallPhone} {
+			width: 100%;
+			margin-bottom: 10px;
+		}
+		
+		&:last-child {
+			margin-right: 0;
+			@media #{$smallPhone} {
+				margin-bottom: 0;
+			}
+		}
+	}
+	.container {
+		@media #{$phone} {
+			height: calc(100vh - 40px)
+		}
+	}
+}

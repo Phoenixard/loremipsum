@@ -1,0 +1,10 @@
+.subtitle {
+	color: #BBBBBB;
+	font-size: 18px;
+	line-height: 22px;
+	text-align: center;
+	margin-bottom: 80px;
+	@media #{$phone} {
+		margin-bottom: 0;
+	}
+}
