@@ -9,6 +9,7 @@
 	outline: none;
 	transition: $transition;
 	position: relative;
+	user-select: none;
 	&:before {
 		content: '';
 		border: solid black;

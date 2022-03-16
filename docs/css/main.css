@@ -397,7 +397,7 @@ ul li:last-child {
   background: #10101d;
   opacity: 0.9;
   width: 100%;
-  z-index: 5;
+  z-index: 11;
   position: fixed;
   top: 0;
   left: 0;
@@ -1190,6 +1190,10 @@ ul li:last-child {
   outline: none;
   transition: all 0.175s;
   position: relative;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 .select:before {
   content: "";

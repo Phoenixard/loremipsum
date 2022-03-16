@@ -13,7 +13,7 @@ var del = require('del');
  
 var paths = {
 	styles: {
-		src: 'src/styles/*.scss',
+		src: 'src/styles/main.scss',
 		dest: 'docs/css/'
 	},
 	scripts: {
@@ -35,7 +35,11 @@ function clean() {
 }
 
 function styles() {
-	return gulp.src(['node_modules/normalize.css/normalize.css', paths.styles.src, '!src/styles/_*.scss'])
+	return gulp.src([
+		'node_modules/normalize.css/normalize.css',
+		paths.styles.src,
+		'!src/styles/_*.scss'
+	])
 		.pipe(concat('main.css'))
 		.pipe(sass())
 		.pipe(autoprefixer())
@@ -70,11 +74,12 @@ function img() {
 
 function watch() {
 	gulp.watch(`${paths.scripts.src}main.js`, scripts);
-	gulp.watch(paths.styles.src, styles);
+	gulp.watch('src/styles/*.scss', styles);
 	gulp.watch(paths.html.src, html);
 }
 
 var build = gulp.series(clean, gulp.parallel(styles, scripts, html, img));
 
 exports.watch = watch;
+exports.styles = styles;
 exports.default = build;
