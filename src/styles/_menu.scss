@@ -1,0 +1,37 @@
+.menu {
+	width: 38%;
+	margin-left: auto;
+	text-align: right;
+	@media #{$laptop} {
+		width: 50%;
+	}
+	@media #{$tablet} {
+		width: 100%;
+		text-align: left;
+		margin-top: 30px;
+	}
+	&__item {
+		margin-right: 60px;
+		color: #fff;
+		font-size: 13px;
+		font-weight: 600;
+		transition: $transition;
+		@media #{$tablet} {
+			display: block;
+			margin-right: 0;
+			margin-bottom: 20px;
+		}
+		&.menu__item_active {
+			color: $blue;
+		}
+		&:last-child {
+			margin-right: 0;
+			@media #{$tablet} {
+				margin-bottom: 0;
+			}
+		}
+		&:hover {
+			color: $blue;
+		}
+	}
+}

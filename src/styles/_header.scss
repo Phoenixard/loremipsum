@@ -14,25 +14,6 @@
 	@media #{$phone} {
 		padding: 10px;
 	}
-	&__mobile-menu {
-		display: none;
-		@media #{$tablet} {
-			display: block;
-			cursor: pointer;
-		}
-	}
-	&__mobile-wrapper {
-		width: 30px;
-		height: 20px;
-		display: flex;
-		flex-direction: column;
-		justify-content: space-between;
-	}
-	&__mobile-row {
-		width: 100%;
-		height: 2px;
-		background: #fff;
-	}
 	&__wrapper {
 		@media #{$tablet} {
 			height: 100%;
@@ -79,43 +60,7 @@
 			transition: $transition;
 		}
 	}
-	&__menu {
-		width: 38%;
-		margin-left: auto;
-		text-align: right;
-		@media #{$laptop} {
-			width: 50%;
-		}
-		@media #{$tablet} {
-			width: 100%;
-			text-align: left;
-			margin-top: 30px;
-		}
-	}
-	&__menu-item {
-		margin-right: 60px;
-		color: #fff;
-		font-size: 13px;
-		font-weight: 600;
-		transition: $transition;
-		@media #{$tablet} {
-			display: block;
-			margin-right: 0;
-			margin-bottom: 20px;
-		}
-		&.is-active {
-			color: $blue;
-		}
-		&:last-child {
-			margin-right: 0;
-			@media #{$tablet} {
-				margin-bottom: 0;
-			}
-		}
-		&:hover {
-			color: $blue;
-		}
-	}
+
 	&__close {
 		display: none;
 		@media #{$tablet} {
