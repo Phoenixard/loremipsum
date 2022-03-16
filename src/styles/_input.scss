@@ -23,11 +23,11 @@
 		visibility: hidden;
 		position: absolute;
 	}
-}
-.input_attach {
-	@media #{$tablet} {
-		width: 100%;
-		max-width: 375px;
-		margin: 0 auto;
+	&_attach {
+		@media #{$tablet} {
+			width: 100%;
+			max-width: 375px;
+			margin: 0 auto;
+		}
 	}
 }

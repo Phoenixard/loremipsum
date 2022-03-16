@@ -19,41 +19,41 @@
 		color: #2A2B30;
 		border: 1px solid #6F6D7B;
 	}
-}
-.btn_white {
-	background: #fff;
-	border: 1px solid #6F6D7B;
-	color: #2A2B30;
-	&:hover {
-		background: $lightBlue;
-		border: 1px solid #fff;
-		color: #fff;
+	&_white {
+		background: #fff;
+		border: 1px solid #6F6D7B;
+		color: #2A2B30;
+		&:hover {
+			background: $lightBlue;
+			border: 1px solid #fff;
+			color: #fff;
+		}
 	}
-}
-.btn_form {
-	max-width: 375px;
-	line-height: 46px;
-	font-size: 15px;
-}
-.btn_attach {
-	position: relative;
-	font-size: 15px;
-	line-height: 44px;
-	border: 2px solid $blue;
-	background: #fff;
-	color: $nearBlack;
-	font-weight: 600;
-	padding: 0;
-	&:before {
-		content: '';
-		background: url('../img/icon-attach.svg') 50% 50% no-repeat;
-		background-size: cover;
-		width: 17px;
-		height: 21px;
-		display: block;
-		margin-right: 10px;
+	&_form {
+		max-width: 375px;
+		line-height: 46px;
+		font-size: 15px;
 	}
-	&:hover {
-		border: 2px solid #fff;
+	&_attach {
+		position: relative;
+		font-size: 15px;
+		line-height: 44px;
+		border: 2px solid $blue;
+		background: #fff;
+		color: $nearBlack;
+		font-weight: 600;
+		padding: 0;
+		&:before {
+			content: '';
+			background: url('../img/icon-attach.svg') 50% 50% no-repeat;
+			background-size: cover;
+			width: 17px;
+			height: 21px;
+			display: block;
+			margin-right: 10px;
+		}
+		&:hover {
+			border: 2px solid #fff;
+		}
 	}
 }

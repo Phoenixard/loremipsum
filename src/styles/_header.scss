@@ -67,6 +67,7 @@
 		transition: $transition;
 		width: 100%;
 		max-width: 247px;
+		text-transform: uppercase;
 		&:hover {
 			color: $blue;
 		}

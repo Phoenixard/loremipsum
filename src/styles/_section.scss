@@ -9,8 +9,8 @@
 	@media #{$phone} {
 		padding: 40px 0;
 	}
-}
-.section_order {
-	background: url('../img/section-order-bg.jpg') 50% 50% no-repeat;
-	background-size: cover;
+	&_order {
+		background: url('../img/section-order-bg.jpg') 50% 50% no-repeat;
+		background-size: cover;
+	}
 }

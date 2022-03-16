@@ -470,6 +470,7 @@ ul li:last-child {
   transition: all 0.175s;
   width: 100%;
   max-width: 247px;
+  text-transform: uppercase;
 }
 .header__logo:hover {
   color: #43ABF0;
@@ -877,7 +878,6 @@ ul li:last-child {
   color: #2A2B30;
   border: 1px solid #6F6D7B;
 }
-
 .btn_white {
   background: #fff;
   border: 1px solid #6F6D7B;
@@ -888,13 +888,11 @@ ul li:last-child {
   border: 1px solid #fff;
   color: #fff;
 }
-
 .btn_form {
   max-width: 375px;
   line-height: 46px;
   font-size: 15px;
 }
-
 .btn_attach {
   position: relative;
   font-size: 15px;
@@ -936,7 +934,6 @@ ul li:last-child {
     padding: 40px 0;
   }
 }
-
 .section_order {
   background: url("../img/section-order-bg.jpg") 50% 50% no-repeat;
   background-size: cover;
@@ -949,6 +946,7 @@ ul li:last-child {
   text-align: center;
   font-weight: 700;
   margin-bottom: 30px;
+  text-transform: uppercase;
 }
 @media screen and (max-width: 759px) {
   .title {
@@ -1170,7 +1168,6 @@ ul li:last-child {
   visibility: hidden;
   position: absolute;
 }
-
 @media screen and (max-width: 959px) {
   .input_attach {
     width: 100%;
