@@ -1,0 +1,56 @@
+.list-item {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	position: relative;
+	&:before {
+		content: '';
+		width: 100%;
+		height: 6px;
+		background: url('../img/steps-separator-bg.png') 0 50% repeat-x;
+		background-size: auto 100%;
+		position: absolute;
+		top: 47px;
+		left: calc(50% + 62px);
+			@media #{$laptop} {
+				content: none;
+			}
+	}
+	&:last-child {
+		&:before {
+			content: none;
+		}
+	}
+	&__inner {
+		width: 100px;
+		height: 100px;
+		border-radius: 50%;
+		border: 5px solid #286690;
+		box-sizing: border-box;
+		background: $lightBlue;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		position: relative;
+		@media #{$phone} {
+			width: 80px;
+			height: 80px;
+		}
+	}
+	&__icon {
+		width: 55px;
+		height: 55px;
+		fill: #fff;
+		@media #{$phone} {
+			width: 35px;
+			height: 35px;
+		}
+	}
+	&__text {
+		margin-top: 20px;
+		color: #fff;
+		font-size: 16px;
+		line-height: 19px;
+	}
+}

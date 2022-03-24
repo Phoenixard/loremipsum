@@ -1,0 +1,45 @@
+.footer-contacts {
+	display: flex;
+	width: 100%;
+	justify-content: flex-end;
+	@media #{$tablet} {
+		justify-content: flex-start;
+		margin-top: 20px;
+	}
+	@media #{$phone} {
+		margin-top: 30px;
+		flex-direction: column;
+	}
+	&__item {
+		padding-left: 30px;
+		color: #fff;
+		margin-left: 38px;
+		transition: $transition;
+		position: relative;
+		@media #{$phone} {
+			margin-left: 0px;
+			margin-top: 10px;
+		}
+		&:hover {
+			color: $lightBlue;
+		}
+		&:first-child {
+			margin-left: 0;
+			@media #{$phone} {
+				margin-top: 0;
+			}
+		}
+	}
+	&__text {
+		font-size: 13px;
+		line-height: 20px;
+	}
+	&__icon {
+		width: 20px;
+		height: 20px;
+		position: absolute;
+		left: 0;
+		top: 0;
+		fill: $lightBlue;
+	}
+}

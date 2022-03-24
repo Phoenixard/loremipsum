@@ -1,0 +1,28 @@
+.cover-controls {
+	font-size: 0;
+	@media #{$phone} {
+		display: flex;
+		justify-content: space-between;
+	}
+	@media #{$smallPhone} {
+		flex-direction: column;
+	}
+	&__item {
+		display: inline-block;
+		margin-right: 30px;
+		@media #{$phone} {
+			width: calc(50% - 5px);
+			margin-right: 0;
+		}
+		@media #{$smallPhone} {
+			width: 100%;
+			margin-bottom: 10px;
+		}
+		&:last-child {
+			margin-right: 0;
+			@media #{$smallPhone} {
+				margin-bottom: 0;
+			}
+		}
+	}
+}

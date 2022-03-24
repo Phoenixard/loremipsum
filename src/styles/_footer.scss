@@ -56,109 +56,12 @@
 			width: 100%;
 		}
 	}
-	&__payment {
-		display: flex;
-		width: 100%;
-		justify-content: center;
-		@media #{$laptop} {
-			justify-content: flex-start;
-		}
-		@media #{$phone} {
-			flex-direction: column;
-		}
-		.footer__item {
-			color: #C3C3C3;
-			margin-left: 38px;
-			@media #{$phone} {
-				margin-left: 20px;
-			}
-			@media #{$phone} {
-				margin-left: 0;
-				margin-top: 10px;
-			}
-			&:first-child {
-				margin-left: 0;
-				@media #{$phone} {
-					margin-top: 0;
-				}
-			}
-		}
-	}
-	&__contacts {
-		display: flex;
-		width: 100%;
-		justify-content: flex-end;
-		@media #{$tablet} {
-			justify-content: flex-start;
-			margin-top: 20px;
-		}
-		@media #{$phone} {
-			margin-top: 30px;
-			flex-direction: column;
-		}
-		.footer__item {
-			margin-left: 38px;
-			transition: $transition;
-			@media #{$phone} {
-				margin-left: 0px;
-				margin-top: 10px;
-			}
-			&:hover {
-				color: $lightBlue;
-			}
-			&:first-child {
-				margin-left: 0;
-				@media #{$phone} {
-					margin-top: 0;
-				}
-			}
-		}
-	}
-	&__copyright,
-	&__item {
+	&__copyright {
 		font-size: 13px;
 		line-height: 16px;
 		color: #fff;
 	}
-	&__item {
-		line-height: 20px;
-		padding-left: 30px;
-		position: relative;
-		&:before {
-			content: '';
-			width: 20px;
-			height: 20px;
-			position: absolute;
-			left: 0;
-			top: 0;
-			background-repeat: no-repeat;
-			background-position: 50% 50%;
-			background-size: 100%;
-		}
-		&_qiwi {
-			&:before {
-				background-image: url('../img/icon-qiwi.svg')
-			}
-		}
-		&_yandexmoney {
-			&:before {
-				background-image: url('../img/icon-yandex.svg')
-			}
-		}
-		&_webmoney {
-			&:before {
-				background-image: url('../img/icon-webmoney.svg')
-			}
-		}
-		&_mail {
-			&:before {
-				background-image: url('../img/icon-mail.svg')
-			}
-		}
-		&_vk {
-			&:before {
-				background-image: url('../img/icon-vk.svg')
-			}
-		}
+	&__payment {
+		width: 100%;
 	}
 }

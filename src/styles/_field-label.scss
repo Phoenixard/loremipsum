@@ -1,0 +1,30 @@
+.field-label {
+	box-sizing: border-box;
+	border-radius: 4px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: $transition;
+	cursor: pointer;
+	position: relative;
+	border: 2px solid $blue;
+	background: #fff;
+	color: $nearBlack;
+	padding: 0;
+	user-select: none;
+	&:hover {
+		border: 2px solid #fff;
+	}
+	&__text {
+		font-size: 15px;
+		line-height: 44px;
+		font-weight: 600;
+		text-transform: uppercase;
+	}
+	&__icon {
+		width: 17px;
+		height: 21px;
+		display: block;
+		margin-right: 10px;
+	}
+}

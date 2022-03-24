@@ -39,28 +39,23 @@
 			flex-direction: column;
 		}
 	}
-
 	&__logo {
-		font-family: 'Raleway', sans-serif;
-		font-weight: 800;
-		color: #fff;
-		font-size: 28px;
-		transition: $transition;
 		width: 100%;
 		max-width: 247px;
-		text-transform: uppercase;
-		&:hover {
-			color: $blue;
+	}
+	&__menu {
+		width: 38%;
+		@media #{$laptop} {
+			width: 50%;
 		}
-		&:hover span {
-			color: #fff;
-		}
-		span {
-			color: $blue;
-			transition: $transition;
+		margin-left: auto;
+		text-align: right;
+		@media #{$tablet} {
+			width: 100%;
+			text-align: left;
+			margin-top: 30px;
 		}
 	}
-
 	&__close {
 		display: none;
 		@media #{$tablet} {

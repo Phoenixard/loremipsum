@@ -13,4 +13,23 @@
 		background: url('../img/section-order-bg.jpg') 50% 50% no-repeat;
 		background-size: cover;
 	}
+	&__container {
+		width: 100%;
+		max-width: 1200px;
+		margin: 0 auto;
+		padding: 0 15px;
+		box-sizing: border-box;
+		@media #{$phone} {
+			padding: 0 10px;
+		}
+	}
+	&__title {
+		margin-bottom: 30px;
+	}
+	&__subtitle {
+		margin-bottom: 80px;
+		@media #{$phone} {
+			margin-bottom: 0;
+		}
+	}
 }

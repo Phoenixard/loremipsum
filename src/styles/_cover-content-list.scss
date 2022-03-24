@@ -1,0 +1,12 @@
+.cover-content-list {
+	&__item {
+		list-style-type: '-';
+		padding-left: 7px;
+		font-size: 20px;
+		line-height: 24px;
+		margin-bottom: 5px;
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+}

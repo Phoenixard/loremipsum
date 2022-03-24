@@ -19,8 +19,8 @@ $(document).ready(function() {
 
 		$("[data-slider]").slider({
 			slide : function(event, ui) {
-						$("[data-slider-value]").text(ui.value + " ");
-				}
+				$("[data-slider-value]").text(ui.value + " ");
+			}
 		});
 		$("[data-slider-value]").text($( "[data-slider]" ).slider("value"));
 });

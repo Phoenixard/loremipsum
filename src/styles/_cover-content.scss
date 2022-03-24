@@ -1,0 +1,18 @@
+.cover-content {
+	&__text {
+		font-size: 20px;
+		line-height: 24px;
+		margin: 0 0 10px 0;
+		@media #{$phone} {
+			font-size: 16px;
+			line-height: 20px;
+		}
+		&_bold {
+			font-weight: bold;
+		}
+	}
+	&__list {
+		padding-left: 15px;
+		margin: 0;
+	}
+}

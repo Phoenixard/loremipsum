@@ -32,57 +32,16 @@
 		}
 	}
 	&__title {
-		font-size: 48px;
-		line-height: 58px;
-		font-weight: 700;
 		margin-bottom: 80px;
 		@media #{$phone} {
-			font-size: 32px;
-			line-height: 40px;
 			margin-bottom: 40px;
 			margin-top: auto;
 		}
 	}
 	&__content {
 		margin-bottom: 80px;
-		font-size: 20px;
-		line-height: 24px;
 		@media #{$phone} {
-			font-size: 16px;
-			line-height: 20px;
 			margin-bottom: 30px;
-		}
-	}
-	span {
-		color: $blue;
-	}
-	&__btns {
-		font-size: 0;
-		@media #{$phone} {
-			display: flex;
-			justify-content: space-between;
-		}
-		@media #{$smallPhone} {
-			flex-direction: column;
-		}
-	}
-	&__btn {
-		display: inline-block;
-		margin-right: 30px;
-		@media #{$phone} {
-			width: calc(50% - 5px);
-			margin-right: 0;
-		}
-		@media #{$smallPhone} {
-			width: 100%;
-			margin-bottom: 10px;
-		}
-		
-		&:last-child {
-			margin-right: 0;
-			@media #{$smallPhone} {
-				margin-bottom: 0;
-			}
 		}
 	}
 	.container {
