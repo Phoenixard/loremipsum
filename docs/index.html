@@ -101,7 +101,7 @@
       </div>
     </header>
     <main class="main">
-      <div class="cover" style="background-image: url(./img/cover-bg.jpg)">
+      <section class="cover" style="background-image: url(./img/cover-bg.jpg)">
         <div class="container">
           <div class="cover__wrapper">
             <div class="cover__title cover-title"><span class="cover-title__text cover-title__text_colored">Lorem ipsum</span><span class="cover-title__text">Dolor sit amet consectetur</span><span class="cover-title__text cover-title__text_colored">Adipiscing</span></div>
@@ -119,48 +119,48 @@
             </div>
           </div>
         </div>
-      </div>
+      </section>
       <section class="section section_order">
         <div class="section__container">
           <div class="section__title section-title"><span class="section-title__text">Оформление</span><span class="section-title__text section-title__text_colored">Заказа</span></div>
           <div class="section__subtitle section-subtitle"><span class="section-subtitle__text">Перед заполнением формы ознакомьтесь с нашей схемой работы!</span></div>
-          <div class="steps">
+          <div class="section__steps steps">
             <ul class="steps__list steps-list">
               <li class="steps-list__item list-item">
-                <div class="list-item__inner">
-                  <svg class="list-item__icon">
+                <div class="list-item__icon list-item-icon">
+                  <svg class="list-item-icon__svg">
                     <use xlink:href="#icon-loop"></use>
                   </svg>
                 </div>
                 <div class="list-item__text">Lorem ipsum dolor sit amet</div>
               </li>
               <li class="steps-list__item list-item">
-                <div class="list-item__inner">
-                  <svg class="list-item__icon">
+                <div class="list-item__icon list-item-icon">
+                  <svg class="list-item-icon__svg">
                     <use xlink:href="#icon-percent"></use>
                   </svg>
                 </div>
                 <div class="list-item__text">Сonsecteturadipiscing elit</div>
               </li>
               <li class="steps-list__item list-item">
-                <div class="list-item__inner">
-                  <svg class="list-item__icon">
+                <div class="list-item__icon list-item-icon">
+                  <svg class="list-item-icon__svg">
                     <use xlink:href="#icon-add-document"></use>
                   </svg>
                 </div>
                 <div class="list-item__text">Sed do eiusmod tempor</div>
               </li>
               <li class="steps-list__item list-item">
-                <div class="list-item__inner">
-                  <svg class="list-item__icon">
+                <div class="list-item__icon list-item-icon">
+                  <svg class="list-item-icon__svg">
                     <use xlink:href="#icon-mail-white"></use>
                   </svg>
                 </div>
                 <div class="list-item__text">Esse cillum doloreeu fugiat</div>
               </li>
               <li class="steps-list__item list-item">
-                <div class="list-item__inner">
-                  <svg class="list-item__icon">
+                <div class="list-item__icon list-item-icon">
+                  <svg class="list-item-icon__svg">
                     <use xlink:href="#icon-money"></use>
                   </svg>
                 </div>
@@ -169,50 +169,46 @@
             </ul>
           </div>
           <form class="form" action="" method="">
-            <div class="container">
-              <div class="form__wrapper">
-                <div class="form__row">
-                  <div class="form__field">
-                    <div class="select" data-select><span>Sed ut perspiciatis</span><span>Nemo enim ipsam</span><span>Et harum quidem</span><span>Temporibus autem</span><span>Itaque earum rerum</span><span>Itaque earum rerum</span></div>
-                  </div>
-                  <div class="form__field field">
-                    <div class="field__inner">
-                      <input class="field__input" type="email" name="email" placeholder="Ваш e-mail">
-                    </div>
-                  </div>
-                  <div class="form__field field">
-                    <div class="field__inner">
-                      <input class="field__input" type="text" name="name" placeholder="Вашe имя">
-                    </div>
-                  </div>
-                </div>
-                <div class="form__row">
-                  <div class="form__field form__field_medium">
-                    <div class="range-slider">
-                      <div class="range-slider__description">
-                        <div class="range-slider__title">Sed ut perspiciatis, unde omnis iste natus</div>
-                        <div class="range-slider__value range-slider-value"><span class="range-slider-value__text" data-slider-value></span><span class="range-slider-value__text">%</span></div>
-                      </div>
-                      <div class="range-slider__slider">
-                        <div class="range-slider-scale" data-slider></div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="form__field field field_attach">
-                    <div class="field__inner">
-                      <input class="field__input" type="file" name="file" id="input__attach">
-                      <label class="field__label field-label" for="input__attach">
-                        <svg class="field-label__icon">
-                          <use xlink:href="#icon-attach"></use>
-                        </svg><span class="field-label__text">Прикрепить файл</span>
-                      </label>
-                    </div>
-                  </div>
-                </div>
-                <div class="form__btn">
-                  <button class="btn btn_form" type="submit">Отправить</button>
+            <div class="form__row">
+              <div class="form__field">
+                <div class="select" data-select><span>Sed ut perspiciatis</span><span>Nemo enim ipsam</span><span>Et harum quidem</span><span>Temporibus autem</span><span>Itaque earum rerum</span><span>Itaque earum rerum</span></div>
+              </div>
+              <div class="form__field field">
+                <div class="field__inner">
+                  <input class="field__input" type="email" name="email" placeholder="Ваш e-mail">
                 </div>
               </div>
+              <div class="form__field field">
+                <div class="field__inner">
+                  <input class="field__input" type="text" name="name" placeholder="Вашe имя">
+                </div>
+              </div>
+            </div>
+            <div class="form__row">
+              <div class="form__field form__field_medium">
+                <div class="range-slider">
+                  <div class="range-slider__description">
+                    <div class="range-slider__title">Sed ut perspiciatis, unde omnis iste natus</div>
+                    <div class="range-slider__value range-slider-value"><span class="range-slider-value__text" data-slider-value></span><span class="range-slider-value__text">%</span></div>
+                  </div>
+                  <div class="range-slider__slider">
+                    <div class="range-slider-scale" data-slider></div>
+                  </div>
+                </div>
+              </div>
+              <div class="form__field field field_attach">
+                <div class="field__inner">
+                  <input class="field__input" type="file" name="file" id="input__attach">
+                  <label class="field__label field-label" for="input__attach">
+                    <svg class="field-label__icon">
+                      <use xlink:href="#icon-attach"></use>
+                    </svg><span class="field-label__text">Прикрепить файл</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="form__btn">
+              <button class="btn btn_form" type="submit">Отправить</button>
             </div>
           </form>
         </div>
@@ -226,34 +222,34 @@
           </div>
           <div class="footer__col footer__col_wide footer__col_payment">
             <div class="footer__payment footer-payment">
-              <div class="footer-payment__item">
-                <svg class="footer-payment__icon">
+              <div class="footer-payment__item footer-payment-item">
+                <svg class="footer-payment-item__icon">
                   <use xlink:href="#icon-qiwi"></use>
                 </svg>
-                <div class="footer-payment__text">QIWI wallet</div>
+                <div class="footer-payment-item__text">QIWI wallet</div>
               </div>
-              <div class="footer-payment__item">
-                <svg class="footer-payment__icon">
+              <div class="footer-payment__item footer-payment-item">
+                <svg class="footer-payment-item__icon">
                   <use xlink:href="#icon-yandex"></use>
                 </svg>
-                <div class="footer-payment__text">Yandex Money</div>
+                <div class="footer-payment-item__text">Yandex Money</div>
               </div>
-              <div class="footer-payment__item">
-                <svg class="footer-payment__icon">
+              <div class="footer-payment__item footer-payment-item">
+                <svg class="footer-payment-item__icon">
                   <use xlink:href="#icon-webmoney"></use>
                 </svg>
-                <div class="footer-payment__text">Web Money</div>
+                <div class="footer-payment-item__text">Web Money</div>
               </div>
             </div>
           </div>
           <div class="footer__col footer__col_contacts">
-            <div class="footer__contacts footer-contacts"><a class="footer-contacts__item" href="mailto:info@ipsum228.com">
-                <svg class="footer-contacts__icon">
+            <div class="footer__contacts footer-contacts"><a class="footer-contacts__item footer-contacts-item" href="mailto:info@ipsum228.com">
+                <svg class="footer-contacts-item__icon">
                   <use xlink:href="#icon-mail"></use>
-                </svg><span class="footer-contacts__text">info@ipsum228.com</span></a><a class="footer-contacts__item" href="">
-                <svg class="footer-contacts__icon">
+                </svg><span class="footer-contacts-item__text">info@ipsum228.com</span></a><a class="footer-contacts__item footer-contacts-item" href="">
+                <svg class="footer-contacts-item__icon">
                   <use xlink:href="#icon-vk"></use>
-                </svg><span class="footer-contacts__text">Мы вконтакте</span></a></div>
+                </svg><span class="footer-contacts-item__text">Мы вконтакте</span></a></div>
           </div>
         </div>
       </div>

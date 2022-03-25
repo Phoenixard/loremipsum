@@ -1,0 +1,17 @@
+.footer-payment-item {
+	position: relative;
+	&__icon {
+		width: 20px;
+		height: 20px;
+		position: absolute;
+		left: 0;
+		top: 0;
+		fill: $lightBlue;
+	}
+	&__text {
+		color: #C3C3C3;
+		position: relative;
+		font-size: 13px;
+		line-height: 20px;
+	}
+}

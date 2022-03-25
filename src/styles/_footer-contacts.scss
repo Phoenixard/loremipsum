@@ -12,16 +12,10 @@
 	}
 	&__item {
 		padding-left: 30px;
-		color: #fff;
 		margin-left: 38px;
-		transition: $transition;
-		position: relative;
 		@media #{$phone} {
 			margin-left: 0px;
 			margin-top: 10px;
-		}
-		&:hover {
-			color: $lightBlue;
 		}
 		&:first-child {
 			margin-left: 0;
@@ -29,17 +23,5 @@
 				margin-top: 0;
 			}
 		}
-	}
-	&__text {
-		font-size: 13px;
-		line-height: 20px;
-	}
-	&__icon {
-		width: 20px;
-		height: 20px;
-		position: absolute;
-		left: 0;
-		top: 0;
-		fill: $lightBlue;
 	}
 }

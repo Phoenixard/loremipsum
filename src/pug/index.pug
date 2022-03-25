@@ -86,7 +86,7 @@ html(lang="en")
 							a(href="").menu__item ОФОРМИТЬ ЗАКАЗ
 
 		main.main
-			.cover(style="background-image: url(./img/cover-bg.jpg)")
+			section.cover(style="background-image: url(./img/cover-bg.jpg)")
 				.container
 					.cover__wrapper
 						.cover__title.cover-title
@@ -113,76 +113,74 @@ html(lang="en")
 					.section__subtitle.section-subtitle
 							span.section-subtitle__text Перед заполнением формы ознакомьтесь с нашей схемой работы!
 
-					.steps
+					.section__steps.steps
 						ul.steps__list.steps-list
 							li.steps-list__item.list-item
-								.list-item__inner
-									svg.list-item__icon
+								.list-item__icon.list-item-icon
+									svg.list-item-icon__svg
 										use(xlink:href="#icon-loop")
 								.list-item__text Lorem ipsum dolor sit amet
 
 							li.steps-list__item.list-item
-								.list-item__inner
-									svg.list-item__icon
+								.list-item__icon.list-item-icon
+									svg.list-item-icon__svg
 										use(xlink:href="#icon-percent")
 								.list-item__text Сonsecteturadipiscing elit
 
 							li.steps-list__item.list-item
-								.list-item__inner
-									svg.list-item__icon
+								.list-item__icon.list-item-icon
+									svg.list-item-icon__svg
 										use(xlink:href="#icon-add-document")
 								.list-item__text Sed do eiusmod tempor
 
 							li.steps-list__item.list-item
-								.list-item__inner
-									svg.list-item__icon
+								.list-item__icon.list-item-icon
+									svg.list-item-icon__svg
 										use(xlink:href="#icon-mail-white")
 								.list-item__text Esse cillum doloreeu fugiat
 
 							li.steps-list__item.list-item
-								.list-item__inner
-									svg.list-item__icon
+								.list-item__icon.list-item-icon
+									svg.list-item-icon__svg
 										use(xlink:href="#icon-money")
 								.list-item__text Excepteur sint occaecat cupidatat non proident
 
 					form.form(action="" method="")
-						.container
-							.form__wrapper
-								.form__row
-									.form__field
-										.select(data-select)
-											span Sed ut perspiciatis
-											span Nemo enim ipsam
-											span Et harum quidem
-											span Temporibus autem
-											span Itaque earum rerum
-											span Itaque earum rerum
+						.form__row
+							.form__field
+								.select(data-select)
+									span Sed ut perspiciatis
+									span Nemo enim ipsam
+									span Et harum quidem
+									span Temporibus autem
+									span Itaque earum rerum
+									span Itaque earum rerum
 
-									.form__field.field
-										.field__inner
-											input(type="email" name="email" placeholder="Ваш e-mail").field__input
-									.form__field.field
-										.field__inner
-											input(type="text" name="name" placeholder="Вашe имя").field__input
-								.form__row
-									.form__field.form__field_medium
-										.range-slider
-											.range-slider__description
-												.range-slider__title Sed ut perspiciatis, unde omnis iste natus
-												.range-slider__value.range-slider-value
-													span.range-slider-value__text(data-slider-value)
-													span.range-slider-value__text %
-											.range-slider__slider
-												.range-slider-scale(data-slider)
-									.form__field.field.field_attach
-										.field__inner
-											input(type="file" name="file" id="input__attach").field__input
-											label(for="input__attach").field__label.field-label
-												svg.field-label__icon
-													use(xlink:href="#icon-attach")
-												span.field-label__text Прикрепить файл
-								.form__btn
-									button(type="submit").btn.btn_form Отправить
+							.form__field.field
+								.field__inner
+									input(type="email" name="email" placeholder="Ваш e-mail").field__input
+							.form__field.field
+								.field__inner
+									input(type="text" name="name" placeholder="Вашe имя").field__input
+						.form__row
+							.form__field.form__field_medium
+								.range-slider
+									.range-slider__description
+										.range-slider__title Sed ut perspiciatis, unde omnis iste natus
+										.range-slider__value.range-slider-value
+											span.range-slider-value__text(data-slider-value)
+											span.range-slider-value__text %
+									.range-slider__slider
+										.range-slider-scale(data-slider)
+							.form__field.field.field_attach
+								.field__inner
+									input(type="file" name="file" id="input__attach").field__input
+									label(for="input__attach").field__label.field-label
+										svg.field-label__icon
+											use(xlink:href="#icon-attach")
+										span.field-label__text Прикрепить файл
+						.form__btn
+							button(type="submit").btn.btn_form Отправить
 
 		footer.footer
 			.container
@@ -192,29 +190,32 @@ html(lang="en")
 
 					.footer__col.footer__col_wide.footer__col_payment
 						.footer__payment.footer-payment
-							.footer-payment__item
-								svg.footer-payment__icon
+							.footer-payment__item.footer-payment-item
+								svg.footer-payment-item__icon
 									use(xlink:href="#icon-qiwi")
-								.footer-payment__text QIWI wallet
-							.footer-payment__item
-								svg.footer-payment__icon
+								.footer-payment-item__text QIWI wallet
+
+							.footer-payment__item.footer-payment-item
+								svg.footer-payment-item__icon
 									use(xlink:href="#icon-yandex")
-								.footer-payment__text Yandex Money
-							.footer-payment__item
-								svg.footer-payment__icon
+								.footer-payment-item__text Yandex Money
+
+							.footer-payment__item.footer-payment-item
+								svg.footer-payment-item__icon
 									use(xlink:href="#icon-webmoney")
-								.footer-payment__text Web Money
+								.footer-payment-item__text Web Money
 
 					.footer__col.footer__col_contacts
 						.footer__contacts.footer-contacts
-							a(href="mailto:info@ipsum228.com").footer-contacts__item
-								svg.footer-contacts__icon
+							a(href="mailto:info@ipsum228.com").footer-contacts__item.footer-contacts-item
+								svg.footer-contacts-item__icon
 									use(xlink:href="#icon-mail")
-								span.footer-contacts__text info@ipsum228.com
-							a(href="").footer-contacts__item
-								svg.footer-contacts__icon
+								span.footer-contacts-item__text info@ipsum228.com
+
+							a(href="").footer-contacts__item.footer-contacts-item
+								svg.footer-contacts-item__icon
 									use(xlink:href="#icon-vk")
-								span.footer-contacts__text Мы вконтакте
+								span.footer-contacts-item__text Мы вконтакте
 
 	script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer")
 	script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery.nicescroll/3.7.6/jquery.nicescroll.min.js" integrity="sha512-zMfrMAZYAlNClPKjN+JMuslK/B6sPM09BGvrWlW+cymmPmsUT1xJF3P4kxI3lOh9zypakSgWaTpY6vDJY/3Dig==" crossorigin="anonymous" referrerpolicy="no-referrer")
