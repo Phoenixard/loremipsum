@@ -610,7 +610,7 @@ ul {
 .footer-item {
   display: flex;
 }
-.footer-item:hover .footer-item__text_color_white {
+.footer-item .footer-item:hover__text_color_white {
   color: #3E9CDC;
 }
 .footer-item__icon {

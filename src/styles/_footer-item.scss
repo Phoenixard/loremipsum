@@ -1,7 +1,10 @@
 .footer-item {
 	display: flex;
-	&:hover .footer-item__text_color_white {
-		color: $lightBlue;
+	&:hover {
+		.footer-item
+			&__text_color_white {
+				color: $lightBlue;
+		}
 	}
 	&__icon {
 		width: 20px;

@@ -1,11 +1,15 @@
 .header-logo {
 	width: 100%;
 	max-width: 247px;
-	&:hover .header-logo__text {
-		color: $blue;
-	}
-	&:hover .header-logo__text_colored {
-		color: #fff;
+	&:hover {
+		.header-logo {
+			&__text {
+				color: $blue;
+			}
+			&__text_colored {
+				color: #fff;
+			}
+		}
 	}
 	&__text {
 		font-family: 'Raleway', sans-serif;
