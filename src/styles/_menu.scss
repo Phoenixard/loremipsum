@@ -5,6 +5,7 @@
 		font-size: 13px;
 		font-weight: 600;
 		transition: $transition;
+		text-transform: uppercase;
 		@media #{$tablet} {
 			display: block;
 			margin-right: 0;

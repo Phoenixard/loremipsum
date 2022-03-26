@@ -1,4 +1,6 @@
 .header-logo {
+	width: 100%;
+	max-width: 247px;
 	&:hover .header-logo__text {
 		color: $blue;
 	}

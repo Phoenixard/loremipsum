@@ -39,10 +39,6 @@
 			flex-direction: column;
 		}
 	}
-	&__logo {
-		width: 100%;
-		max-width: 247px;
-	}
 	&__menu {
 		width: 38%;
 		@media #{$laptop} {

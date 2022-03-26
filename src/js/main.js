@@ -27,11 +27,11 @@ $(document).ready(function() {
 
 var Menu = {
 	options: {
-		menu: $('.js__mobile-menu')
+		menu: $('.js-mobile-menu')
 	},
 	init: function () {
-		$(document).on('touchstart', '.js__mobile-btn', this.onToggle)
-		$(document).on('touchstart', '.js__mobile-close', this.close)
+		$(document).on('touchstart', '.js-mobile-btn', this.onToggle)
+		$(document).on('touchstart', '.js-mobile-close', this.close)
 	},
 	onToggle: function () {
 		if (Menu.options.menu.hasClass('is-opened')) {

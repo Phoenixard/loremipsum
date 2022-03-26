@@ -8,7 +8,6 @@
 		flex-direction: column;
 	}
 	&__item {
-		padding-left: 30px;
 		margin-left: 38px;
 		@media #{$phone} {
 			margin-left: 20px;

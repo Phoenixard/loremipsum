@@ -1,0 +1,21 @@
+.footer-item {
+	display: flex;
+	&:hover .footer-item__text_color_white {
+		color: $lightBlue;
+	}
+	&__icon {
+		width: 20px;
+		height: 20px;
+		margin-right: 10px;
+		fill: $lightBlue;
+	}
+	&__text {
+		color: #C3C3C3;
+		font-size: 13px;
+		line-height: 20px;
+		transition: $transition;
+		&_color_white {
+			color: #fff;
+		}
+	}
+}
